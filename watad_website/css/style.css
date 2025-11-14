@@ -1,0 +1,312 @@
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+
+  .main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .main-header.scrolled {
+    background-color: #ffffff; /* or use rgba(255, 255, 255, 0.95) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-image {
+    height: 400px; /* You can adjust the height */
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+
+  .main-header img {
+    height: 90px;
+  }
+
+  .nav .nav-link {
+    color: #222;               /* Text color */
+    font-weight: 600;          /* Font weight */
+    font-size: 22.5px;           /* Font size */
+    padding: 10px 15px;        /* Optional: spacing */
+    transition: color 0.3s;    /* Smooth hover transition */
+  }
+  
+  .nav .nav-link:hover {
+    color: #ffa726;            /* Hover color */
+  }
+  
+
+  .hero {
+    background: url('../images/carousel-2.jpg') center/cover no-repeat;
+    color: black;
+    padding: 35rem 2rem 4rem;
+    text-align: center;
+    margin-top: 0px;
+    min-height: 50vh;
+  }
+
+  .hero .btn {
+    background-color: #ffa726;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+  }
+
+  .hero .btn:hover {
+    background-color: #fb8c00;
+  }
+
+  .feature-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    min-height: 300px; /* makes them taller */
+    
+  }
+
+  .feature-box:hover {
+    transform: translateY(-5px);
+    background: #fb8c00; /* change to any color you want */
+    color: #fff; /* text becomes white */
+  }
+
+  .feature-box:hover h3,
+  .feature-box:hover p {
+    color: #fff;
+  }
+
+  .subject-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .subject-box:hover {
+    transform: translateY(-5px);
+  }
+
+  .footer .btn.btn-social {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  font-weight: normal;
+  border: 1px solid #FFFFFF;
+  border-radius: 35px;
+  transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+  color: var(--primary);
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
+
+.footer .footer-menu a {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
+
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.course-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.course-info {
+  font-size: 16px;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.btn-register {
+  margin-top: 15px;
+  font-size: 16px;
+  padding: 12px;
+  transition: 0.3s;
+  background-color: #fb8c00;
+  color: black;
+  
+}
+
+.btn-register:hover {
+
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn-orange {
+  background-color: #ffa726;
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #fb8c00;
+  color: white;
+}
+
+
+.footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.btn-social img {
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+}
+
+.btn-social:hover img {
+  transform: scale(1.2);
+}
+
+.copyright {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 15px;
+  margin-top: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.input-group {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+
